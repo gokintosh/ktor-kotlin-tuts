@@ -7,5 +7,6 @@ import com.gokulnair.plugins.*
 fun main() {
     embeddedServer(Netty, port = 8080, host = "localhost") {
         configureRouting()
+        contactUsModule()
     }.start(wait = true)
 }

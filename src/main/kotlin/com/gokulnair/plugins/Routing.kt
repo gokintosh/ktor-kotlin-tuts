@@ -9,8 +9,11 @@ import io.ktor.request.*
 fun Application.configureRouting() {
 
     routing {
-        get("/") {
-            call.respondText("Hello World!")
+        get("/goku") {
+            call.respondText("Hello gokul!")
+        }
+        get("/roku"){
+            call.respond("hello Roku")
         }
     }
 }
